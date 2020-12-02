@@ -1,5 +1,9 @@
 import java.util.*;
 
+//Written by Gabe
+
+//Creates an arraylist that stores items and gives outside access to the items within the catalog,
+//along with being able to give the name and size of the catalog
 public class Catalog {
     private String name;
     private ArrayList<Item> catalog = new ArrayList<Item>();
