@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Catalog {
     private String name;
     private ArrayList<Item> catalog;
