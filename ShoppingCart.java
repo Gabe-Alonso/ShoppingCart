@@ -14,11 +14,11 @@ public class ShoppingCart {
         for (int i = 0; i < cart.size(); i++) {
             if (cart.get(i).getItem().toString().equals(order.getItem().toString())) {
                 cart.set(i, order);
+                return;
             }
-            else {
-                cart.add(order);
-            }
+            cart.add(order);
         }
+
         
 
     }
