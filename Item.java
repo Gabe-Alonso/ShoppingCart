@@ -1,12 +1,13 @@
 import java.text.*; 
 
 public class Item {
+    //instance variables
     private String name;
     private double price;
     private int bulkQuantity;
     private double bulkPrice;
     
-    
+    //constructor given name and price 
     Item(String nameIn, double priceIn){
         if(priceIn < 0){
             throw new IllegalArgumentException();
@@ -17,6 +18,7 @@ public class Item {
         bulkPrice = 0;
     }
 
+    //constructor given name, price, bulk quantity, and bulk price 
     Item(String nameIn, double priceIn, int bulkQuantityIn, double bulkPriceIn){
         if(priceIn < 0 || bulkQuantityIn < 0 || bulkPriceIn < 0){
             throw new IllegalArgumentException();
@@ -27,6 +29,7 @@ public class Item {
         bulkPrice = bulkPriceIn;
     }
 
+    //calculates price given a quantity of the item 
     public double priceFor(int quantity){
         if(quantity < 0){
             throw new IllegalArgumentException();
@@ -44,6 +47,7 @@ public class Item {
         return toReturn;
     }
 
+    //return String of the item, includes name and base price. include bulk quantity and bulk price if applicable 
     public String toString(){
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         if(bulkPrice == 0){
