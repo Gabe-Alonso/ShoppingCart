@@ -16,9 +16,9 @@ public class ShoppingCart {
                 cart.set(i, order);
                 return;
             }
-            cart.add(order);
+            
         }
-
+        cart.add(order);
         
 
     }
