@@ -1,7 +1,8 @@
 import java.util.*;
 //TJ
 //12/2/20
-//Shopping Cart Lab
+//The class uses the ArrayList datastructure to store a list of ItemOrders. 
+//It may add new ItemOrders without erroneously duplicating them and calculate the price of the orders.
 public class ShoppingCart {
     private ArrayList<ItemOrder> cart = new ArrayList<ItemOrder>();
     private boolean discount;
