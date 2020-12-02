@@ -10,7 +10,7 @@ public class ItemOrder {
     }
 
     //return cost of said item 
-    public double getPrice(String item)
+    public double getPrice()
     {
         return product.priceFor(numberOf);
     }
